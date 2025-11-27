@@ -63,8 +63,13 @@ body {
 }
 
 @keyframes float {
-    0% { transform: translate(0, 0); }
-    100% { transform: translate(30px, 30px); }
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(30px, 30px);
+    }
 }
 
 .container {
@@ -102,19 +107,41 @@ body {
     margin-bottom: 20px;
 }
 
-.avatar-placeholder {
-    width: 100px;
-    height: 100px;
+/* Profile Header */
+
+/* ESTILOS PARA EL CONTENEDOR (EL CÍRCULO AZUL) */
+.profile-image-container {
+    /* Mantenemos el margen inferior */
+    margin-bottom: 20px;
+
+    /* PROPIEDADES DEL CÍRCULO Y FONDO */
+    width: 120px;
+    /* Tamaño un poco más grande para que se note */
+    height: 120px;
     background: linear-gradient(135deg, var(--accent-color), var(--secondary-accent));
+    /* El degradado que querías */
     border-radius: 50%;
+    /* ¡CLAVE! Hace que el contenedor sea redondo */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    font-size: 40px;
-    color: white;
+    margin: 0 auto 20px auto;
+    /* Centra el contenedor y le da margen */
+    overflow: hidden;
+    /* ¡CLAVE! Asegura que la imagen recortada se mantenga dentro */
     box-shadow: 0 4px 15px rgba(56, 189, 248, 0.3);
     border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ESTILOS PARA LA IMAGEN (PARA QUE LLENE EL CÍRCULO) */
+.profile-image {
+    width: 100%;
+    /* La imagen ocupa el 100% del ancho del contenedor */
+    height: 100%;
+    /* La imagen ocupa el 100% del alto del contenedor */
+    object-fit: cover;
+    /* ¡CLAVE! Recorta la imagen para que llene el círculo sin distorsionarse */
+    display: block;
 }
 
 .name {
@@ -207,7 +234,7 @@ body {
     .card {
         padding: 30px 20px;
     }
-    
+
     .name {
         font-size: 1.8rem;
     }
