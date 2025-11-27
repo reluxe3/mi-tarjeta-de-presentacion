@@ -4,14 +4,6 @@ Este proyecto es una carta de presentación personal moderna y responsiva, dise�
 
 ## Personalización
 
-Antes de publicar, asegúrate de actualizar la información en `index.html`:
-
-1.  Busca `[Tu Nombre]` y reemplázalo con tu nombre real.
-2.  Actualiza la sección "Sobre Mí" con tu descripción.
-3.  En la sección de enlaces, actualiza los `href` con tus URLs reales:
-    *   LinkedIn: Reemplaza `#` con tu URL de LinkedIn.
-    *   CV: Reemplaza `#` con la URL de tu CV (puede ser un archivo PDF en el repositorio o un enlace a Google Drive).
-
 ## Despliegue en GitHub Pages
 
 1.  Sube estos archivos a un repositorio en GitHub.
